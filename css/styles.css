@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #34C7C2;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0px 120px;
+    padding-top: 150px;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 64px;
+    display: flex;
+    gap: 40px;
+}
+
+header {
+    padding: 0px 120px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #C4F5F3;
+    text-decoration: none;
+    transition: color 250ms ease;
+}
+
+a:hover {
+    color: #FFFF;
+}
+
+.nav a {
+    font-size: 14px;
+}
+
+.button {
+    padding: 14px 32px 14px 32px;
+    border: 1.6px #FFFF solid;
+    border-radius: 100px;
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(50% - 40px);
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.tag {
+    color: #FFFF;
+    padding: 12px 20px 12px 20px;
+    border: 1.6px #FFFF solid;
+    border-radius: 100px;
+    background-color: #48CDC8;
+}
+
+.container_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+
+}
+
+h1 {
+    color: #FFFF;
+    font-size: 48px;
+    font-weight: 500;
+
+}
+
+p {
+    font-size: 18px;
+    color: #C4F5F3;
+    font-weight: 400;
+}
+
+.w400 {
+    width: 400px;
+}
+
+.container_broke_buttons {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+
+}
+
+.broke {
+    color: #13181F;
+    background-color: #FFFF;
+}
+
+.broke:hover {
+    color: #13181F;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.background_photo {
+    width: 100%;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
