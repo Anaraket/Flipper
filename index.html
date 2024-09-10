@@ -10,8 +10,8 @@
     <header>
         <img src="/assets/icons/logo.svg" alt="Flippet" class="logo">
         <div class="nav">
-            <a href="">О компании</a>
-            <a href="">Наши бассейны</a>
+            <a href="#about">О компании</a>
+            <a href="#pools">Наши бассейны</a>
             <a href="">Оборудование</a>
             <a class="button" href="">Связаться</a>
         </div>
@@ -27,10 +27,50 @@
             </div>
             <div class="container_broke_buttons">
                 <a class="button broke w100" href="">Заказать</a>
-                <a class="button w100" href="">Подробнее</a>
+                <a class="button w100" href="#about">Подробнее</a>
             </div>
         </div>
         <img src="/assets/img/background_photo.png" alt="pool" class="background_photo">
     </div>
+    <div class="main_inf" id="about">
+        <div class="second_block">
+            <img class="w100" src="/assets/img/experience.svg" alt="experience">
+            <div class="about_company w100 container_text">
+                <h1 class="about_title">О компании</h1>
+                <p class="about_description">Мы уже более 10 лет занимаемся проектированием и строительством бассейнов по всей России, реализовав свыше 500 проектов. От уникального дизайна до установки и обслуживания — мы обеспечиваем полный цикл работ.<br><br>
+                    Наш успех строится на высоком качестве, инновациях и персонализированном подходе. Сотрудничая с лучшими производителями и архитекторами, мы создаём роскошные бассейны, соответствующие вашим самым высоким ожиданиям.</p>
+            </div>
+        </div>
+        <div class="our_pools" id="pools">
+            <h1>Наши бассейны</h1>
+            <div class="slider">
+                <img class="logo_right" src="/assets/icons/logo.svg" alt="Fliper">
+                <div class="about_pool_image">
+                    <div class="container_text w100">
+                        <h2>Бассейн "Горное Озеро"<br>(Алтай)</h2>
+                        <p class="w400 about_first_pool">Уникальный бассейн, органично вписывающийся в природный ландшафт Алтайских гор. Кристально чистая вода и великолепные виды создают атмосферу полного единения с природой.</p>
+                    </div>
+                    <div class="right_block w100">
+                        <div class="elipses">
+                            <div class="point point_active"></div>
+                            <div class="point"></div>
+                            <div class="point"></div>
+                            <div class="point"></div>
+                            <div class="point"></div>
+                        </div>
+                        <div class="slides">
+                            <button class="button_slide_pool">
+                                <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
+                            </button>
+                            <button class="button_slide_pool">
+                                <img src="/assets/icons/next_pool.svg" alt="next_pool">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
