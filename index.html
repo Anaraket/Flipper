@@ -44,15 +44,15 @@
         </div>
         <div class="our_pools" id="pools">
             <h1>Наши бассейны</h1>
-            <div class="slider">
+            <div class="slider" id="img_1">
                 <img class="logo_right" src="/assets/icons/logo.svg" alt="Fliper">
                 <div class="about_pool_image">
                     <div class="container_text w100">
-                        <h2>Бассейн "Горное Озеро"<br>(Алтай)</h2>
-                        <p class="w400 about_first_pool">Уникальный бассейн, органично вписывающийся в природный ландшафт Алтайских гор. Кристально чистая вода и великолепные виды создают атмосферу полного единения с природой.</p>
+                        <h2 id="title_1">Бассейн "Горное Озеро"<br>(Алтай)</h2>
+                        <p id="text_1" class="w400 about_first_pool">Уникальный бассейн, органично вписывающийся в природный ландшафт Алтайских гор. Кристально чистая вода и великолепные виды создают атмосферу полного единения с природой.</p>
                     </div>
                     <div class="right_block w100">
-                        <div class="elipses">
+                        <div id="el_1" class="elipses">
                             <div class="point point_active"></div>
                             <div class="point"></div>
                             <div class="point"></div>
@@ -60,10 +60,10 @@
                             <div class="point"></div>
                         </div>
                         <div class="slides">
-                            <button class="button_slide_pool">
+                            <button class="button_slide_pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', active_1)">
                                 <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                             </button>
-                            <button class="button_slide_pool">
+                            <button class="button_slide_pool" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', active_1)">
                                 <img src="/assets/icons/next_pool.svg" alt="next_pool">
                             </button>
                         </div>
@@ -73,5 +73,6 @@
         </div>
     </div>
 
+    <script src="/script.js"></script>
 </body>
 </html>
