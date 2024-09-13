@@ -16,7 +16,7 @@ body, html {
     overflow-x: hidden;
 }
 
-.container {
+.screen_one {
     padding: 0px 120px;
     padding-top: 150px;
     height: 100vh;
@@ -114,7 +114,7 @@ p {
 }
 
 .w400 {
-    width: 400px;
+    width: 75%;
 }
 
 .container_broke_buttons {
@@ -156,7 +156,7 @@ p {
     gap: 120px;
 }
 
-.second_block {
+.second_screen {
     display: flex;
     gap: 40px;
 }
@@ -239,7 +239,7 @@ h2 {
     gap: 8px;
 }
 
-.button_slide_pool {
+.button_slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,6 +253,21 @@ h2 {
     transition: transform 250ms ease;
 }
 
-.button_slide_pool:hover {
+.button_slide:hover {
     transform: scale(1.1);
+}
+
+.screen_four {
+    display: flex;
+    gap: 40px;
+}
+
+.equipment_description {
+    color: #5B677A;
+}
+
+.equipment {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
 }

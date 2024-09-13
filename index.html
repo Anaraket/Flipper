@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="/assets/icons/logo.svg" alt="Flippet" class="logo">
+        <img src="/assets/icons/logo.svg" alt="Flippet" class="logo_nav">
         <div class="nav">
             <a href="#about">О компании</a>
             <a href="#pools">Наши бассейны</a>
@@ -17,11 +17,11 @@
             <a class="button" href="">Связаться</a>
         </div>
     </header>
-    <div class="container">
+    <div class="screen_one">
         <div class="main_container">
-            <div class="main_text">
+             <div class="main_text"> <!-- text_block -->
                 <p class="tag">Работаем по всей России</p>
-                <div class="container_text">
+                <div class="container_text"> <!-- text -->
                     <h1>Создаем бассейны под заказ</h1>
                     <p class="w400">Доверьте нам все этапы создания вашего бассейна — от первоначальной идеи до финальной установки.</p>
                 </div>
@@ -34,11 +34,11 @@
         <img src="/assets/img/background_photo.png" alt="pool" class="background_photo">
     </div>
     <div class="main_inf" id="about">
-        <div class="second_block">
+        <div class="second_screen">
             <img class="w100" src="/assets/img/experience.svg" alt="experience">
             <div class="about_company w100 container_text">
                 <h1 class="about_title">О компании</h1>
-                <p class="about_description">Мы уже более 10 лет занимаемся проектированием и строительством бассейнов по всей России, реализовав свыше 500 проектов. От уникального дизайна до установки и обслуживания — мы обеспечиваем полный цикл работ.<br><br>
+                <p class="about_description w400">Мы уже более 10 лет занимаемся проектированием и строительством бассейнов по всей России, реализовав свыше 500 проектов. От уникального дизайна до установки и обслуживания — мы обеспечиваем полный цикл работ.<br><br>
                     Наш успех строится на высоком качестве, инновациях и персонализированном подходе. Сотрудничая с лучшими производителями и архитекторами, мы создаём роскошные бассейны, соответствующие вашим самым высоким ожиданиям.</p>
             </div>
         </div>
@@ -60,13 +60,46 @@
                             <div class="point"></div>
                         </div>
                         <div class="slides">
-                            <button class="button_slide_pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', active_1)">
+                            <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', active_1)">
                                 <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                             </button>
-                            <button class="button_slide_pool" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', active_1)">
+                            <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', active_1)">
                                 <img src="/assets/icons/next_pool.svg" alt="next_pool">
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen_four">
+            <div class="container_text w100">
+                <div class="equipment">
+                    <img src="/assets/icons/shield.svg" alt="shield" class="shield">
+                    <h1 class="equipment_title">Оборудование</h1>
+                </div>
+                <p class="equipment_description w400">Высококачественное оборудование, установленное нашей компанией, гарантирует надёжную работу бассейна и максимальный комфорт для его владельцев. Все системы тщательно подобраны и интегрированы, обеспечивая чистоту, безопасность и удобство использования.</p>
+
+            </div>
+            <div class="filtration_system_block">
+                <div class="main_text">
+                    <h2 class="filtration_system_title">Система фильтрации</h2>
+                    <p class="filtration_system_description">Поддерживает чистоту воды в бассейне с помощью механических фильтров и дезинфицирующих средств.</p>
+                </div>
+                <div class="right_block w100">
+                    <div id="el_1" class="elipses">
+                        <div class="point point_active"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                    <div class="slides">
+                        <button class="button_slide advantage" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', active_1)">
+                            <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
+                        </button>
+                        <button class="button_slide advantage" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', active_1)">
+                            <img src="/assets/icons/next_pool.svg" alt="next_pool">
+                        </button>
                     </div>
                 </div>
             </div>
