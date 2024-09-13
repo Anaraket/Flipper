@@ -7,12 +7,31 @@ let list_one = [
 ];
 let active_1 = 0;
 
-function slider(titleID, textID, elID, kuda, list, imgID, active) {
+let list_two = [
+    'Система фильтрации', 'Поддерживает чистоту воды в бассейне с помощью механических фильтров и дезинфицирующих средств.', '',
+    'Автоматическая дезинфекция', 'Обеспечивает регулярное введение дезинфицирующих реагентов и контроль pH.', '',
+    'Циркуляционный насос', 'Обеспечивает постоянное движение воды, поддерживая её чистоту и температуру.', '',
+    'Ультрафиолетовая очистка', 'Уничтожает бактерии и вирусы с помощью ультрафиолетового излучения.', '',
+    'Система управления', 'Электронный блок для мониторинга и управления всеми системами бассейна.', ''
+];
+let active_2 = 0;
+
+function slider(titleID, textID, elID, kuda, list, imgID, actives) {
     let title = document.getElementById(titleID);
     let text = document.getElementById(textID);
     let el = document.getElementById(elID);
-    let img = document.getElementById(imgID);
+    let img;
+    let active;
     let points = el.getElementsByClassName('point');
+
+    if (imgID !== 'none') {
+        img = document.getElementById(imgID);
+    }
+    if (actives == 'active_1') {
+        active = active_1;
+    } else {
+        active = active_2;
+    }
 
     // Сброс активного кружка
     points[active / 3].classList.remove('point_active');
@@ -27,11 +46,17 @@ function slider(titleID, textID, elID, kuda, list, imgID, active) {
     // Обновляем контент
     title.innerHTML = list[active];
     text.innerHTML = list[active + 1];
-    img.style.backgroundImage = `url("${list[active + 2]}")`;
+    if (imgID !== 'none') {
+        img.style.backgroundImage = `url("${list[active + 2]}")`;
+    }
 
     // Активируем текущий кружок
     points[active / 3].classList.add('point_active');
 
     // Обновляем активный индекс
-    active_1 = active;
+    if (actives == 'active_1') {
+        active_1 = active;
+    } else {
+        active_2 = active;
+    }
 }
