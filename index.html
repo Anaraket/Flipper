@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Флиппер - Бассейны под заказ</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="/icon.svg" type="image/x-icon">
 </head>
 <body>
@@ -13,8 +13,8 @@
         <div class="nav">
             <a href="#about">О компании</a>
             <a href="#pools">Наши бассейны</a>
-            <a href="">Оборудование</a>
-            <a class="button" href="">Связаться</a>
+            <a href="#equipment">Оборудование</a>
+            <a class="button" href="#connect">Связаться</a>
         </div>
     </header>
     <div class="screen_one">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="container_broke_buttons">
-                <a class="button broke w100" href="">Заказать</a>
+                <a class="button broke w100" href="#connect">Заказать</a>
                 <a class="button w100" href="#about">Подробнее</a>
             </div>
         </div>
@@ -63,7 +63,7 @@
                             <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', 'active_1')">
                                 <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                             </button>
-                            <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1')">
+                            <button class="button_slide pool" id="equipment" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1')">
                                 <img src="/assets/icons/next_pool.svg" alt="next_pool">
                             </button>
                         </div>
@@ -77,7 +77,7 @@
                     <img src="/assets/icons/shield.svg" alt="shield" class="shield">
                     <h1 class="equipment_title">Оборудование</h1>
                 </div>
-                <p class="equipment_description w400">Высококачественное оборудование, установленное нашей компанией, гарантирует надёжную работу бассейна и максимальный комфорт для его владельцев. Все системы тщательно подобраны и интегрированы, обеспечивая чистоту, безопасность и удобство использования.</p>
+                <p class="equipment_description">Высококачественное оборудование, установленное нашей компанией, гарантирует надёжную работу бассейна и максимальный комфорт для его владельцев. Все системы тщательно подобраны и интегрированы, обеспечивая чистоту, безопасность и удобство использования.</p>
 
             </div>
             <div class="filtration_system_block">
@@ -98,11 +98,70 @@
                             <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                         </button>
                         <button class="button_slide advantage" onclick="slider('title_2', 'text_2', 'el_2', 'right', list_two, 'none', 'active_2')">
-                            <img src="/assets/icons/next_pool.svg" alt="next_pool">
+                            <img src="/assets/icons/next_pool.svg" alt="next_pool" id="connect">
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="fifth_screen">
+        <div class="buttons_connect">
+            <div class="stroka">
+                <button class="link phone_and_tg">
+                    <h3 class="contact_white_bk">Телефон</h3>
+                    <p class="contact_white_bk">8 (800) 555-35-35</p>
+                </button>
+                <button class="link email_and_whatsapp">
+                    <h3 class="contact_no_bk">Почта</h3>
+                    <p class="contact_no_bk">order@flipper.ru</p>
+                </button>
+            </div>
+            <div class="stroka">
+                <a href="" class="link email_and_whatsapp">
+                    <h3 class="contact_no_bk">WhatsApp</h3>
+                    <p class="contact_no_bk">WhatsApp</p>
+                </a>
+                <a href="" class="link phone_and_tg">
+                    <h3 class="contact_white_bk">Telegram</h3>
+                    <p class="contact_white_bk">Telegram</p>
+                </a>
+            </div>
+        </div>
+        <div class="container_text w100 svaz">
+            <h1>Связаться с нами</h1>
+            <p class="w400">Мы поможем вам в создании бассейна вашей мечты. Выберите удобный способ связи и мы все обсудим</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="official_information">
+            <h2>Информация</h2>
+            <div class="container_text">
+                <p class="w400 inf">Почта: order@flipper.ru</p>
+                <p class="w400 inf">Телефон: 8 (800) 555-35-35</p>
+                <p class="w400 inf">Адрес: Город грусть, улица печаль, подъезд тоскливости, квартира одиночества</p>
+                <p class="w400 inf">ИП: 123456789</p>
+            </div>
+            </div>
+            <div class="dop_content">
+                <h2>Дополнительно</h2>
+                <a href="" class="person">
+                    <img class="ava" src="/assets/icons/ava_luci.png" alt="luci_ava">
+                    <div class="about_luci">
+                        <p class="name">Luci</p>
+                        <p class="designer">Дизайнер</p>
+                    </div>
+                </a>
+                <a href="" class="person">
+                    <img class="ava" src="/assets/icons/ava_anaraket.png" alt="artem_ava">
+                    <div class="about_luci">
+                        <p class="name">Artem</p>
+                        <p class="designer">Frontend</p>
+                    </div>
+                </a>
+                <div class="bottom">
+                    <p class="commercity inf">© 2024 ИП «Флиппер». Все права защищены.</p>
+                </div>
         </div>
     </div>
 

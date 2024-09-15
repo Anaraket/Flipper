@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "./reset.css"
 html {
     scroll-behavior: smooth;
 }
@@ -114,7 +115,7 @@ p {
 }
 
 .w400 {
-    width: 75%;
+    width: 400px;
 }
 
 .container_broke_buttons {
@@ -262,12 +263,151 @@ h2 {
     gap: 40px;
 }
 
-.equipment_description {
-    color: #5B677A;
-}
-
 .equipment {
     display: flex;
     flex-direction: row;
     gap: 4px;
+}
+
+.equipment_description {
+    color: #5B677A;
+    width: 500px;
+}
+
+.filtration_system_block {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B2029;
+    border-radius: 40px;
+    padding: 24px;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 280px;
+}
+
+.filtration_system_description {
+    color: #5B677A;
+    width: 400px;
+}
+
+.fifth_screen {
+    padding: 120px;
+    width: 100%;
+    gap: 40px;
+    display: flex;
+}
+
+.buttons_connect {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.stroka {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+}
+
+.link {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    aspect-ratio: 2/1;
+    width: 100%;
+    background-color: #FFFF;
+    border-radius: 28px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border: 2px solid #FFFF;
+}
+.phone_and_tg {
+    background-color: #FFFF;
+}
+
+.email_and_whatsapp {
+    background-color: transparent;
+}
+
+h3 {
+    font-weight: 238px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.contact_white_bk {
+    color: #34C7C2;
+}
+
+.contact_no_bk {
+    color: #FFFF;
+}
+
+.footer {
+    background-color: #13181F;
+    display: flex;
+    border-radius: 120px 120px 0px 0px;
+    padding: 90px 120px 90px 120px;
+    width: 100%;
+    gap: 40px
+}
+
+.official_information {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inf {
+    color: #5B677A;
+}
+
+.dop_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    background-color: #1B2029;
+    border-radius: 100px;
+    width: 45%;
+    gap: 16px;
+    padding: 12px 24px 12px 16px
+}
+
+.about_luci {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px 12px 16px
+}
+
+.name {
+    color: #FFFF;
+}
+
+.designer {
+    color: #5B677A;
+}
+
+.commercity {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.ava {
+    border-radius: 100px;
+    height: 100%;
+    aspect-ratio: 1;
 }
