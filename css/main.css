@@ -1,46 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import "./reset.css"
-html {
-    scroll-behavior: smooth;
-}
+@import "./reset.css";
 
+/*! Служебные теги */
 
-* {
-    font-family: "Manrope", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-}
 body, html {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     background-color: #34C7C2;
     overflow-x: hidden;
-}
-
-.screen_one {
-    padding: 0px 120px;
-    padding-top: 150px;
-    height: 100vh;
-    width: 100vw;
-    padding-bottom: 64px;
-    display: flex;
-    gap: 40px;
-}
-
-header {
-    padding: 0px 120px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 32px;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 46px;
 }
 
 a {
@@ -59,14 +27,66 @@ a:hover {
     font-size: 14px;
 }
 
-.button {
-    padding: 14px 32px 14px 32px;
-    border: 1.6px #FFFF solid;
-    border-radius: 100px;
+h1 {
     color: #FFFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+h2 {
+    color: #FFFF;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    color: #C4F5F3;
+    font-weight: 400;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w400 {
+    width: 400px;
+    max-width: 100%;
+}
+
+/*! Header */
+
+header {
+    padding: 0px 120px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 46px;
+}
+
+/*! Первый экран */
+
+.screen_one {
+    padding: 0px 120px;
+    padding-top: 150px;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 64px;
+    display: flex;
+    gap: 40px;
 }
 
 .main_container {
@@ -85,12 +105,23 @@ a:hover {
     align-items: flex-start;
 }
 
+.button {
+    padding: 14px 32px 14px 32px;
+    border: 1.6px #FFFF solid;
+    border-radius: 100px;
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tag {
     color: #FFFF;
     padding: 12px 20px 12px 20px;
     border: 1.6px #FFFF solid;
     border-radius: 100px;
     background-color: #48CDC8;
+    font-size: 14px;
 }
 
 .container_text {
@@ -99,23 +130,6 @@ a:hover {
     gap: 16px;
     align-items: flex-start;
 
-}
-
-h1 {
-    color: #FFFF;
-    font-size: 48px;
-    font-weight: 500;
-
-}
-
-p {
-    font-size: 18px;
-    color: #C4F5F3;
-    font-weight: 400;
-}
-
-.w400 {
-    width: 400px;
 }
 
 .container_broke_buttons {
@@ -134,9 +148,7 @@ p {
     color: #13181F;
 }
 
-.w100 {
-    width: 100%;
-}
+
 
 .background_photo {
     width: 100%;
@@ -145,6 +157,8 @@ p {
     left: 50%;
     transform: translate(-50%, 0%);
 }
+
+/*! Блок с чёрным фоном*/
 
 .main_inf {
     position: relative;
@@ -157,15 +171,19 @@ p {
     gap: 120px;
 }
 
+/*! Второй экран */
+
 .second_screen {
     display: flex;
     gap: 40px;
 }
 
 .about_description {
-    width: 500px;
+    width:80%;
     color: #5B677A;
 }
+
+/*! Третий экран */
 
 .our_pools {
     display: flex;
@@ -180,7 +198,7 @@ p {
     background-repeat: no-repeat;
     border-radius: 40px;
     width: 100%;
-    height: 600px;
+    aspect-ratio: 2/1;
     position: relative;
 }
 
@@ -200,12 +218,6 @@ p {
     padding: 32px;
     background: linear-gradient(0deg, rgba(19, 24, 31, 0.9) 0%, rgba(19, 24, 31, 0.7) 60.8%, rgba(19, 24, 31, 0) 100%);
 
-}
-
-h2 {
-    color: #FFFF;
-    font-weight: 500;
-    font-size: 40px;
 }
 
 .about_first_pool {
@@ -243,9 +255,8 @@ h2 {
 .button_slide {
     display: flex;
     align-items: center;
+    padding: 14px;
     justify-content: center;
-    height: 52px;
-    aspect-ratio: 1;
     background-color: transparent;
     border: 1.6px solid #FFFF;
     border-radius: 20px;
@@ -258,6 +269,8 @@ h2 {
     transform: scale(1.1);
 }
 
+/*! Четвёртый экран */
+
 .screen_four {
     display: flex;
     gap: 40px;
@@ -266,12 +279,12 @@ h2 {
 .equipment {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 8px;
 }
 
 .equipment_description {
     color: #5B677A;
-    width: 500px;
+    width: 70%;
 }
 
 .filtration_system_block {
@@ -287,8 +300,10 @@ h2 {
 
 .filtration_system_description {
     color: #5B677A;
-    width: 400px;
+    width: 80%;
 }
+
+/*! Пятый экран */
 
 .fifth_screen {
     padding: 120px;
@@ -332,12 +347,6 @@ h2 {
     background-color: transparent;
 }
 
-h3 {
-    font-weight: 238px;
-    font-size: 28px;
-    font-weight: 500;
-}
-
 .contact_white_bk {
     color: #34C7C2;
 }
@@ -345,6 +354,8 @@ h3 {
 .contact_no_bk {
     color: #FFFF;
 }
+
+/*! Нижний блок */
 
 .footer {
     background-color: #13181F;
@@ -371,6 +382,7 @@ h3 {
     flex-direction: column;
     gap: 24px;
     width: 100%;
+    align-items: flex-start;
 }
 
 .person {
@@ -378,12 +390,9 @@ h3 {
     flex-direction: row;
     background-color: #1B2029;
     border-radius: 100px;
-    width: 45%;
-    gap: 16px;
-    padding: 12px 24px 12px 16px
 }
 
-.about_luci {
+.about_person {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -396,18 +405,229 @@ h3 {
     color: #FFFF;
 }
 
-.designer {
+.job {
     color: #5B677A;
 }
 
-.commercity {
+.bottom {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    min-height: 46px;
+    width: 100%;
 }
 
-.ava {
+.bottom p {
+    text-align: right;
+}
+
+.avatar {
     border-radius: 100px;
-    height: 100%;
-    aspect-ratio: 1;
+    height: 64px;
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        margin-top: 20px;
+        padding: 0px 60px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .nav a {
+        font-size: 8px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .w400 {
+        width: 250px;
+    }
+
+    .logo_nav {
+        width: 44px;
+    }
+
+    .nav {
+        gap: 24px;
+    }
+
+    .button {
+        gap: 6px;
+        padding: 8px 20px 8px 20px;
+    }
+
+    .screen_one {
+        padding: 0px 60px;
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .main_container {
+        width: calc(50% - 20px);
+    }
+
+    .main_text {
+        gap: 4px;
+    }
+
+    .tag {
+        gap: 6px;
+        padding: 8px 10px 8px 10px;
+        font-size: 8px;
+    }
+
+    .container_text {
+        gap: 8px;
+    }
+
+    .container_broke_buttons {
+        gap: 4px;
+    }
+
+    .background_photo {
+        bottom: -48px;
+    }
+
+    .main_inf {
+        padding: 48px 60px 48px 60px;
+        gap: 60px;
+        border-radius: 60px;
+    }
+
+    .second_screen {
+        gap: 20px;
+    }
+
+    .about_description {
+        width: 83%;
+    }
+
+    .our_pools {
+        gap: 8px;
+    }
+
+    .slider {
+        border-radius: 22px;
+    }
+
+    .logo_right {
+        width: 44px;
+        top: 18px;
+        right: 18px;
+    }
+
+    .about_pool_image {
+        padding: 18px;
+        gap: 20px;
+    }
+
+    .about_first_pool {
+        width: 75%;
+    }
+
+    .right_block {
+        gap: 16px;
+    }
+
+    .elipses {
+        gap: 4px;
+    }
+
+    .slides {
+        gap: 4px;
+    }
+
+    .point {
+        height: 8px;
+    }
+
+    .button_slide {
+        border-radius: 10px;
+        padding: 8px;
+        gap: 6px;
+        border: 1px solid #FFFF;
+    }
+
+    .button_slide img {
+        width: 12px;
+    }
+
+    .screen_four {
+        gap: 20px ;
+    }
+
+    .equipment {
+        gap: 4px;
+    }
+
+    .shield {
+        height: 38px;
+    }
+
+    .filtration_system_block {
+        padding: 14px;
+        border-radius: 22px;
+        min-height: 157px;
+    }
+
+    .fifth_screen {
+        gap: 20px;
+        padding: 60px;
+    }
+
+    .buttons_connect {
+        gap: 4px;
+    }
+
+    .stroka {
+        gap: 4px;
+    }
+
+    .link {
+        gap: 4px;
+        border-radius: 18px;
+        padding: 14px;
+    }
+
+    .footer {
+        border-radius: 60px 60px 0px 0px;
+        gap: 20px;
+        padding: 48px 60px 48px 60px
+    }
+
+    .official_information {
+        gap: 12px;
+    }
+
+    .dop_content {
+        gap: 12px;
+    }
+
+    .avatar {
+        height: 36px;
+    }
+
+    .about_person {
+        gap: 8px;
+        padding: 6px 14px 6px 8px
+    }
 }
