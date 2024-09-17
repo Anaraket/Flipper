@@ -77,6 +77,47 @@ header {
     gap: 46px;
 }
 
+.circle_menu {
+    border: 6px solid #FFFFFF;
+    height: 28px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60vw;
+    position: fixed;
+    top: 13px;
+    right: 13px;
+    background-color: #FFF;
+    border-radius: 26px;
+    gap: 32px;
+    padding: 40px 26px 40px 26px;
+    z-index: 3;
+}
+
+.hamburger .circle_menu {
+    border-color: #34C7C2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hamburger a {
+    font-size: 12px;
+    color: #5B677A;
+}
+
+.hamburger .button {
+    border-color: #E4E6EB;
+    width: 100%;
+}
+
+
 /*! Первый экран */
 
 .screen_one {
@@ -156,6 +197,14 @@ header {
     bottom: -120px;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+.bk_photo_1 {
+    display: block;
+}
+
+.bk_photo_2 {
+    display: none;
 }
 
 /*! Блок с чёрным фоном*/
@@ -507,6 +556,14 @@ header {
         bottom: -48px;
     }
 
+    .bk_photo_1 {
+        display: block;
+    }
+
+    .bk_photo_2 {
+        display: none;
+    }
+
     .main_inf {
         padding: 48px 60px 48px 60px;
         gap: 60px;
@@ -629,5 +686,232 @@ header {
     .about_person {
         gap: 8px;
         padding: 6px 14px 6px 8px
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 0px 26px;
+        margin-top: 22px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .w400 {
+        width: 180px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .circle_menu {
+        display: block;
+    }
+
+    .logo_nav {
+        width: 60px;
+    }
+
+    .screen_one {
+        padding: 0px 26px;
+        padding-top: 115px;
+        padding-bottom: 44px;
+        height: 100svh;
+    }
+
+    .main_container {
+        gap: 6px;
+        width: 100%;
+    }
+
+    .tag {
+        padding: 6px 12px 6px 12px;
+        gap: 6px;
+        border: 1px #FFF solid;
+        font-size: 10px;
+    }
+
+    .main_text {
+        gap: 10px;
+    }
+
+    .container_broke_buttons {
+        gap: 6px;
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 10px 24px 10px 24px;
+        gap: 6px;
+        border: 1px solid #FFFFFF;
+        border-radius: 100px;
+    }
+
+    .background_photo {
+        bottom: -26px;
+    }
+
+    .bk_photo_1 {
+        display: none;
+    }
+
+    .bk_photo_2 {
+        display: block;
+    }
+
+    .main_inf {
+        padding: 40px 26px 40px 26px;
+        border-radius: 26px;
+        gap: 60px;
+    }
+
+    .second_screen {
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .about_description {
+        width: 100%;
+    }
+
+    .our_pools {
+        gap: 10px;
+    }
+
+    .slider {
+        border-radius: 22px;
+        height: 268px;
+    }
+
+    .logo_right {
+        width: 38px;
+        right: 8px;
+    }
+
+    .about_pool_image {
+        gap: 12px;
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    .right_block {
+        gap: 10px;
+    }
+
+    .elipses {
+        gap: 4px;
+    }
+
+    .point {
+        height: 6px;
+    }
+
+    .slides {
+        gap: 4px;
+    }
+
+    .button_slide {
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+        padding: 6px;
+        gap: 4px;
+    }
+
+    .button_slide img {
+        width: 10px;
+    }
+
+    .about_first_pool {
+        width: 90%;
+    }
+
+    .screen_four {
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .equipment {
+        gap: 6px;
+    }
+
+    .shield {
+        height: 36px;
+    }
+
+    .equipment_description {
+        width: 100%;
+    }
+
+    .filtration_system_block {
+        padding: 14px;
+        border-radius: 22px;
+    }
+
+    .fifth_screen {
+        gap: 18px;
+        padding: 60px 26px;
+        flex-direction: column-reverse;
+    }
+
+    .buttons_connect {
+        gap: 6px;
+    }
+
+    .stroka {
+        gap: 6px;
+    }
+
+    .link {
+        padding: 14px;
+        gap: 6px;
+        border-radius: 24px;
+        border: 2px solid #FFFFFF;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 18px;
+        padding: 40px 26px 40px 26px;
+        border-radius: 26px 26px 0px 0px;
+    }
+
+    .official_information {
+        gap: 18px;
+    }
+
+    .dop_content {
+        gap: 14px;
+    }
+
+    .avatar {
+        height: 38px;
+    }
+
+    .about_person {
+        padding: 8px 14px 8px 10px;
+        gap: 10px;
+    }
+
+    .bottom {
+        gap: 10px;
     }
 }
