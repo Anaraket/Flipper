@@ -8,8 +8,8 @@
     <link rel="icon" href="/icon.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="hamburger">
-        <button class="circle_menu"></button>
+    <div class="hamburger" id="hamburger">
+        <button onclick="closes()" class="circle_menu"></button>
         <a href="#about">О компании</a>
         <a href="#pools">Наши бассейны</a>
         <a href="#equipment">Оборудование</a>
@@ -23,7 +23,7 @@
             <a href="#equipment">Оборудование</a>
             <a class="button" href="#connect">Связаться</a>
         </div>
-        <button class="circle_menu"></button>
+        <button onclick="opens()" class="circle_menu"></button>
     </header>
     <div class="screen_one">
         <div class="main_container">
@@ -121,21 +121,21 @@
     <div class="fifth_screen">
         <div class="buttons_connect">
             <div class="stroka">
-                <button class="link phone_and_tg">
+                <button onclick="copypy('8 (800) 555-35-35', 'Телефон скопирован')" class="link phone_and_tg">
                     <h3 class="contact_white_bk">Телефон</h3>
                     <p class="contact_white_bk">8 (800) 555-35-35</p>
                 </button>
-                <button class="link email_and_whatsapp">
+                <button onclick="copypy('order@flipper.ru', 'Почта скопирована')" class="link email_and_whatsapp">
                     <h3 class="contact_no_bk">Почта</h3>
                     <p class="contact_no_bk">order@flipper.ru</p>
                 </button>
             </div>
             <div class="stroka">
-                <a href="" class="link email_and_whatsapp">
+                <a target="_blank" href="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" class="link email_and_whatsapp">
                     <h3 class="contact_no_bk">WhatsApp</h3>
                     <p class="contact_no_bk">WhatsApp</p>
                 </a>
-                <a href="" class="link phone_and_tg">
+                <a target="_blank" href="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" class="link phone_and_tg">
                     <h3 class="contact_white_bk">Telegram</h3>
                     <p class="contact_white_bk">Telegram</p>
                 </a>
@@ -158,14 +158,14 @@
         </div>
         <div class="dop_content">
             <h2>Дополнительно</h2>
-            <a href="" class="person">
+            <a target="_blank" href="https://mars-lucifer.ru" class="person">
                 <img class="avatar" src="/assets/icons/ava_luci.png" alt="luci_ava">
                 <div class="about_person">
                     <p class="name">Luci</p>
                     <p class="job">Дизайнер</p>
                 </div>
             </a>
-            <a href="" class="person">
+            <a target="_blank" href="https://t.me/Anaraket" class="person">
                 <img class="avatar" src="/assets/icons/ava_anaraket.png" alt="artem_ava">
                 <div class="about_person">
                     <p class="name">Artem</p>

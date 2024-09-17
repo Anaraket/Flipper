@@ -86,7 +86,7 @@ header {
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: start;
     width: 60vw;
@@ -98,6 +98,15 @@ header {
     gap: 32px;
     padding: 40px 26px 40px 26px;
     z-index: 3;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.show {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .hamburger .circle_menu {

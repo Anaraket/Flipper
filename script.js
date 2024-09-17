@@ -60,3 +60,33 @@ function slider(titleID, textID, elID, kuda, list, imgID, actives) {
         active_2 = active;
     }
 }
+
+function opens() {
+    const menu = document.getElementById("hamburger");
+
+    menu.style.display = 'flex';
+    setTimeout(() => {
+        menu.classList.add("show");
+    }, 10);
+}
+
+function closes() {
+    const menu = document.getElementById("hamburger");
+
+    menu.classList.remove("show");
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 500);
+}
+
+function copypy(link, text) {
+    const tempInput = document.createElement("textarea");
+    tempInput.value = link;
+    document.body.appendChild(tempInput);
+
+    tempInput.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(tempInput);
+    alert(text);
+}
