@@ -327,6 +327,44 @@ header {
     transform: scale(1.1);
 }
 
+.slider_anim {
+    animation-name: slider;
+    animation-duration: 600ms;
+}
+
+.slider_anim-img {
+    animation-name: slider-img;
+    animation-duration: 600ms;
+}
+
+@keyframes slider-img {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slider {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    33% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    66% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 /*! Четвёртый экран */
 
 .screen_four {
