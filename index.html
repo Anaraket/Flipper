@@ -8,6 +8,10 @@
     <link rel="icon" href="/icon.svg" type="image/x-icon">
 </head>
 <body>
+    <div class="over_img_box" id="over_img_box">
+        <img class="over_img" id="over_img" src="/assets/img/equipment1.jpg" alt="equipment">
+        <button onclick="closes_img()" class="over_menu_close">Закрыть</button>
+    </div>
     <div class="hamburger" id="hamburger">
         <button onclick="closes()" class="circle_menu"></button>
         <a href="#about">О компании</a>
@@ -73,10 +77,10 @@
                             <div class="point"></div>
                         </div>
                         <div class="slides">
-                            <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', 'active_1')">
+                            <button class="button_slide pool" onclick="slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', 'active_1', 'none')">
                                 <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                             </button>
-                            <button class="button_slide pool" id="equipment" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1')">
+                            <button class="button_slide pool" id="equipment" onclick="slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1', 'none')">
                                 <img src="/assets/icons/next_pool.svg" alt="next_pool">
                             </button>
                         </div>
@@ -99,6 +103,7 @@
                     <p id="text_2" class="filtration_system_description">Поддерживает чистоту воды в бассейне с помощью механических фильтров и дезинфицирующих средств.</p>
                 </div>
                 <div class="right_block w100">
+                    <button id="btn_2" onclick="open_img('/assets/img/equipment1.jpg')" class="button_slide advantage button_slide_full"><img src="/assets/icons/arrow_outward.svg" alt="arrow_outward"></button>
                     <div id="el_2" class="elipses">
                         <div class="point point_active"></div>
                         <div class="point"></div>
@@ -107,10 +112,10 @@
                         <div class="point"></div>
                     </div>
                     <div class="slides">
-                        <button class="button_slide advantage" onclick="slider('title_2', 'text_2', 'el_2', 'left', list_two, 'none', 'active_2')">
+                        <button class="button_slide advantage" onclick="slider('title_2', 'text_2', 'el_2', 'left', list_two, 'none', 'active_2', 'btn_2')">
                             <img src="/assets/icons/previous_pool.svg" alt="previous_pool">
                         </button>
-                        <button class="button_slide advantage" onclick="slider('title_2', 'text_2', 'el_2', 'right', list_two, 'none', 'active_2')">
+                        <button class="button_slide advantage" onclick="slider('title_2', 'text_2', 'el_2', 'right', list_two, 'none', 'active_2', 'btn_2')">
                             <img src="/assets/icons/next_pool.svg" alt="next_pool" id="connect">
                         </button>
                     </div>
@@ -121,9 +126,9 @@
     <div class="fifth_screen">
         <div class="buttons_connect">
             <div class="stroka">
-                <button onclick="copypy('8 (800) 555-35-35', 'Телефон скопирован')" class="link phone_and_tg">
+                <button onclick="copypy('+7 918 328-16-06', 'Телефон скопирован')" class="link phone_and_tg">
                     <h3 class="contact_white_bk">Телефон</h3>
-                    <p class="contact_white_bk">8 (800) 555-35-35</p>
+                    <p class="contact_white_bk">+7 918 328-16-06</p>
                 </button>
                 <button onclick="copypy('order@flipper.ru', 'Почта скопирована')" class="link email_and_whatsapp">
                     <h3 class="contact_no_bk">Почта</h3>
@@ -151,7 +156,7 @@
             <h2>Информация</h2>
             <div class="container_text">
                 <p class="w400 inf"><b>Почта:</b> order@flipper.ru</p>
-                <p class="w400 inf"><b>Телефон:</b> 8 (800) 555-35-35</p>
+                <p class="w400 inf"><b>Телефон:</b> +7 918 328-16-06</p>
                 <p class="w400 inf"><b>Адрес:</b> Город грусть, улица печаль, подъезд тоскливости, квартира одиночества</p>
                 <p class="w400 inf"><b>ИП:</b> 123456789</p>
             </div>

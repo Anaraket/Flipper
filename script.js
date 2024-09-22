@@ -1,18 +1,18 @@
 let list_one = [
-    'Бассейн "Горное Озеро"<br>(Алтай)', 'Уникальный бассейн, органично вписывающийся в природный ландшафт Алтайских гор. Кристально чистая вода и великолепные виды создают атмосферу полного единения с природой.', '/assets/img/first_pool.png',
-    'Бассейн 2', 'Описание бассейна 2', '/assets/img/2.jpg',
-    'Бассейн 3', 'Описание бассейна 3', '/assets/img/3.jpg',
-    'Бассейн 4', 'Описание бассейна 4', '/assets/img/4.jpg',
-    'Бассейн 5', 'Описание бассейна 5', '/assets/img/5.jpg'
+    'Бассейн "Горное Озеро"<br>(Алтай)', 'Уникальный бассейн, органично вписывающийся в природный ландшафт Алтайских гор. Кристально чистая вода и великолепные виды создают атмосферу полного единения с природой.', '/assets/img/first_pool.png', '',
+    'Бассейн 2', 'Описание бассейна 2', '/assets/img/2.jpg', '',
+    'Бассейн 3', 'Описание бассейна 3', '/assets/img/3.jpg', '',
+    'Бассейн 4', 'Описание бассейна 4', '/assets/img/4.jpg', '',
+    'Бассейн 5', 'Описание бассейна 5', '/assets/img/5.jpg', ''
 ];
 let active_1 = 0;
 
 let list_two = [
-    'Система фильтрации', 'Поддерживает чистоту воды в бассейне с помощью механических фильтров и дезинфицирующих средств.', '',
-    'Автоматическая дезинфекция', 'Обеспечивает регулярное введение дезинфицирующих реагентов и контроль pH.', '',
-    'Циркуляционный насос', 'Обеспечивает постоянное движение воды, поддерживая её чистоту и температуру.', '',
-    'Ультрафиолетовая очистка', 'Уничтожает бактерии и вирусы с помощью ультрафиолетового излучения.', '',
-    'Система управления', 'Электронный блок для мониторинга и управления всеми системами бассейна.', ''
+    'Система фильтрации', 'Поддерживает чистоту воды в бассейне с помощью механических фильтров и дезинфицирующих средств.', '', '/assets/img/equipment1.jpg',
+    'Автоматическая дезинфекция', 'Обеспечивает регулярное введение дезинфицирующих реагентов и контроль pH.', '', '/assets/img/equipment2.jpg',
+    'Циркуляционный насос', 'Обеспечивает постоянное движение воды, поддерживая её чистоту и температуру.', '', '/assets/img/equipment1.jpg',
+    'Ультрафиолетовая очистка', 'Уничтожает бактерии и вирусы с помощью ультрафиолетового излучения.', '', '/assets/img/equipment2.jpg',
+    'Система управления', 'Электронный блок для мониторинга и управления всеми системами бассейна.', '',  '/assets/img/equipment1.jpg'
 ];
 let active_2 = 0;
 
@@ -33,9 +33,9 @@ sliderBlock.addEventListener('touchend', (event) => {
 
 function handleSwipe() {
     if (touchEndX < touchStartX - 50) { // Свайп влево (более 50px)
-        slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1');
+        slider('title_1', 'text_1', 'el_1', 'right', list_one, 'img_1', 'active_1', 'none');
     } else if (touchEndX > touchStartX + 50) { // Свайп вправо (более 50px)
-        slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', 'active_1');
+        slider('title_1', 'text_1', 'el_1', 'left', list_one, 'img_1', 'active_1', 'none');
     }
 }
 
@@ -56,14 +56,14 @@ filtrationSystemBlock.addEventListener('touchend', (event) => {
 
 function handleSwipe2() {
     if (touchEndX2 < touchStartX2 - 50) { // Свайп влево
-        slider('title_2', 'text_2', 'el_2', 'right', list_two, 'none', 'active_2');
+        slider('title_2', 'text_2', 'el_2', 'right', list_two, 'none', 'active_2', 'btn_2');
     } else if (touchEndX2 > touchStartX2 + 50) { // Свайп вправо
-        slider('title_2', 'text_2', 'el_2', 'left', list_two, 'none', 'active_2');
+        slider('title_2', 'text_2', 'el_2', 'left', list_two, 'none', 'active_2', 'btn_2');
     }
 }
 
 
-function slider(titleID, textID, elID, kuda, list, imgID, actives) {
+function slider(titleID, textID, elID, kuda, list, imgID, actives, btnID) {
     let title = document.getElementById(titleID);
     let text = document.getElementById(textID);
     let el = document.getElementById(elID);
@@ -74,6 +74,9 @@ function slider(titleID, textID, elID, kuda, list, imgID, actives) {
     if (imgID !== 'none') {
         img = document.getElementById(imgID);
     }
+    if (btnID !== 'none') {
+        btn = document.getElementById(btnID);
+    }
     if (actives == 'active_1') {
         active = active_1;
     } else {
@@ -81,13 +84,13 @@ function slider(titleID, textID, elID, kuda, list, imgID, actives) {
     }
 
     // Сброс активного кружка
-    points[Math.floor(active / 3)].classList.remove('point_active');
+    points[Math.floor(active / 4)].classList.remove('point_active');
 
     // Определяем направление слайда
     if (kuda === "right") {
-        active = (active + 3) % list.length;
+        active = (active + 4) % list.length;
     } else if (kuda === "left") {
-        active = (active - 3 + list.length) % list.length;
+        active = (active - 4 + list.length) % list.length;
     }
 
     // Обновляем контент
@@ -97,6 +100,9 @@ function slider(titleID, textID, elID, kuda, list, imgID, actives) {
     setTimeout(() => {
         title.innerHTML = list[active];
         text.innerHTML = list[active + 1];
+        if (btnID !== 'none') {
+            btn.onclick = () => {open_img(`${list[active + 3]}`)};
+        }
         if (imgID !== 'none') {
             img.style.backgroundImage = `url("${list[active + 2]}")`;
         }
@@ -114,7 +120,7 @@ function slider(titleID, textID, elID, kuda, list, imgID, actives) {
 
 
     // Активируем текущий кружок
-    points[Math.floor(active / 3)].classList.add('point_active');
+    points[Math.floor(active / 4)].classList.add('point_active');
 
     // Обновляем активный индекс
     if (actives == 'active_1') {
@@ -153,4 +159,24 @@ function copypy(link, text) {
 
     document.body.removeChild(tempInput);
     alert(text);
+}
+
+function open_img(source) {
+    const imgBox = document.getElementById("over_img_box");
+    const img = document.getElementById("over_img");
+
+    imgBox.style.display = 'flex';
+    setTimeout(() => {
+        img.src = source;
+        imgBox.classList.add("show");
+    }, 10);
+}
+
+function closes_img() {
+    const imgBox = document.getElementById("over_img_box");
+
+    imgBox.classList.remove("show");
+    setTimeout(() => {
+        imgBox.style.display = 'none';
+    }, 500);
 }

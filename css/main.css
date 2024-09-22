@@ -103,12 +103,6 @@ header {
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.show {
-    display: flex;
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .hamburger .circle_menu {
     border-color: #34C7C2;
     position: absolute;
@@ -337,6 +331,49 @@ header {
     animation-duration: 600ms;
 }
 
+.button_slide_full {
+    flex-grow: 1;
+}
+
+.over_img_box {
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #13181F80;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.over_img {
+    width: 64%;
+    aspect-ratio: 16/9;
+    border-radius: 60px;
+    border: 12px white solid;
+}
+
+.over_menu_close {
+    display: block;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 200ms ease;
+}
+.over_menu_close:hover {
+    opacity: 1;
+}
+
+.show {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @keyframes slider-img {
     0% {
         opacity: 0;
@@ -392,6 +429,7 @@ header {
     justify-content: space-between;
     width: 100%;
     min-height: 280px;
+    gap: 16px;
 }
 
 .filtration_system_description {
@@ -960,5 +998,11 @@ header {
 
     .bottom {
         gap: 10px;
+    }
+    
+    .over_img {
+        width: 90%;
+        border-width: 8px;
+        border-radius: 34px;
     }
 }
