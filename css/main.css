@@ -972,6 +972,16 @@ header {
         border: 2px solid #FFFFFF;
     }
 
+    .contact_white_bk {
+        text-align: left;
+        word-break: break-all;
+    }
+
+    .contact_no_bk {
+        text-align: left;
+        word-break: break-all;
+    }
+
     .footer {
         flex-direction: column;
         gap: 18px;
@@ -999,7 +1009,7 @@ header {
     .bottom {
         gap: 10px;
     }
-    
+
     .over_img {
         width: 90%;
         border-width: 8px;
