@@ -560,6 +560,14 @@ header {
     height: 64px;
 }
 
+.link_big {
+    aspect-ratio: 3/1;
+}
+
+.contact_white_bk {
+    text-align: left;
+}
+
 
 
 @media (max-width: 1024px) {
@@ -973,7 +981,6 @@ header {
     }
 
     .contact_white_bk {
-        text-align: left;
         word-break: break-all;
     }
 
