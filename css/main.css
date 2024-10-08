@@ -27,7 +27,7 @@ a:hover {
     font-size: 14px;
 }
 
-h1 {
+h1, .h1 {
     color: #FFFF;
     font-size: 48px;
     font-weight: 500;
@@ -588,7 +588,7 @@ header {
         font-size: 10px;
     }
 
-    h1 {
+    h1, .h1 {
         font-size: 28px;
     }
 
@@ -788,7 +788,7 @@ header {
         margin-top: 22px;
     }
 
-    h1 {
+    h1, .h1 {
         font-size: 32px;
     }
 
